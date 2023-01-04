@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign In</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/blob/yellow blob.gif"/>
+    <script>
+        function game(){
+            location.href = "/game"
+        }
+    </script>
+</head>
+  <body>
+      <div style="position: absolute;right: 5%;top: 5%;"><h4><a href="/signup">Click here to Signup </a></h4></div>
+      <button class="game" onclick="game()"><img src="/img/game.png" height="70"></button>
+      <br><br><br><br><br><br>
+        <div class="center">
+            <div class="container">
+                <form action="/games" method="post">
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <input type="username" class="form-control" name="username">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" name="pwd">
+                    </div>
+                    <!-- <div class="checkbox">
+                        <label><input type="checkbox"> Remember me</label>
+                    </div> -->
+                    <button type="submit" class="btn btn-default btn-success">Login</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
